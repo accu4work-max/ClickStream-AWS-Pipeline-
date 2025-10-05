@@ -100,6 +100,3 @@
 ## Conclusion
 This design provides a pragmatic, low-ops baseline: raw-to-processed in S3 with Glue/Athena, optional Redshift acceleration, and an event-driven path for purchases. It balances cost and performance while remaining flexible to evolve toward streaming or lakehouse patterns as needs grow.
 
-
-Book Reference
-https://soclibrary.futa.edu.ng/books/Data%20Engineering%20with%20AWS%20Acquire%20the%20skills%20to%20design%20and%20build%20AWS-based%20data%20transformation%20pipelines%20like%20a%20pro%20(Eagar,%20Gareth)%20(Z-Library).pdf
