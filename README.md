@@ -7,6 +7,8 @@
 - Event-driven alerts on purchases; near–real-time acceptable as file-level (on object creation) processing.
 
 ## Architecture Overview
+<img width="1016" height="698" alt="image" src="https://github.com/user-attachments/assets/32105753-5a62-40ff-ad69-f65c9f8c6db4" />
+
 - Raw zone: S3 (`company-raw`) partitioned by `year/month/day/hour`. Enables partition pruning and independent retries.
 - Catalog: Glue Data Catalog + optional Glue Crawler or partition projection in Athena to avoid `MSCK` overhead.
 - Transform: Glue ETL (PySpark) normalizes to star schema and writes Parquet+Snappy in processed zone (`company-processed`).
